@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicalizando</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
         <nav>
             <a href="#inicio">Inicio</a>
+            <a href="#generos">Generos</a>
             <a href="#artistas">Top Artistas</a>
-            <a href="#musicas">Top Albuns/Músicas</a>
+            <a href="#albuns">Top Albuns</a>
+            <a href="#musicas">Top Músicas</a>
             <a href="#login">Login</a>
         </nav>
     </header>
@@ -23,9 +27,17 @@
         <h1>Inicio</h1>
     </section>
 
+    <section>
+        <h2 id ="generos">Generos</h1>
+    </section>
+
     <section id = "artistas">
         <h2>Top Artistas</h1>
     </section>
+
+    <section id = "albuns">
+        <h2>Top Albuns</h1>
+    </section>    
     
     <section id = "musicas">
         <h2>Top Albuns/Músicas</h1>
@@ -35,7 +47,16 @@
 
 <dialog id="login">
 
-    <form action="">
+    <form>
+
+        <h2>Login</h2>
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email"><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha"><br>
+        <button type="button" id="btnClose">Sair</button>
+        <button type="submit">Entrar</button>
         
     </form>
 

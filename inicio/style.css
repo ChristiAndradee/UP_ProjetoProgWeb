@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     color: rgb(63, 175, 240);   
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: left;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border-bottom: 2px solid black;
+}
+
+nav a:last-child{margin-left: auto; }
+
+a{
+    color: #605eda;
+    text-decoration:none;
+    padding: 15px 20px;
+    transition: padding 0.2s ease-in-out;
+}
+
+#generos{
+    background-color: #979494;
+    padding-top: 30vh;
+    height: 60vh;
+}
+#artistas{
+    background-color: #747474;
+    padding-top: 30vh;
+    height: 60vh;
+}
+#albuns{
+    background-color: #979494;
+    padding-top: 30vh;
+    height: 60vh;
+}
+#musicas{
+    background-color: #747474;
+    padding-top: 30vh;
+    height: 60vh;
+}
+
+
