@@ -28,23 +28,42 @@ a{
 
 #generos{
     background-color: #979494;
-    padding-top: 30vh;
-    height: 60vh;
+    padding: 250px 70px;
 }
 #artistas{
     background-color: #747474;
-    padding-top: 30vh;
-    height: 60vh;
+    padding: 250px 70px;
 }
 #albuns{
     background-color: #979494;
-    padding-top: 30vh;
-    height: 60vh;
+    padding: 250px 70px;
 }
 #musicas{
     background-color: #747474;
-    padding-top: 30vh;
-    height: 60vh;
+    padding: 250px 70px;
 }
 
+.Caixas {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.caixa {
+    text-align: center;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.caixa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caixa p {
+    color: white;
+    margin-top: 10px;
+    font-weight:bold;
+}
 
