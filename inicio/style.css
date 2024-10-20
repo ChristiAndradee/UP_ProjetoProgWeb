@@ -1,49 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Gowun+Dodum&family=Kumbh+Sans:wght@100..900&family=Six+Caps&family=Tsukimi+Rounded&display=swap');
+
 body{
+    font-family: "Kumbh Sans", sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-     color: rgb(63, 175, 240);   
-}
+    /*padding-top: 40px;*/
+    color: #71e3da;
 
 nav{
-    background-color: black;
+    font-family: "Saira", sans-serif;
+    background-color: #111;
     display: flex;
     align-items: left;
     position: fixed;
+    top: 0px;
     left: 0px;
     right: 0px;
-    top: 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000;
 }
 
 nav a:last-child{margin-left: auto; }
 
 a{
-    color: #605eda;
+    color: #ffffff;
     text-decoration:none;
-    padding: 15px 20px;
+    padding: 15px 40px;
     transition: padding 0.2s ease-in-out;
 }
 
-#generos{
-    background-color: #979494;
+#inicio{
+    background-color: #494a64;
     padding: 250px 70px;
 }
+
+#generos{
+    background-color: #2b2c40;
+    padding: 250px 70px;
+    column-gap: 100px;
+}
 #artistas{
-    background-color: #747474;
+    background-color: #494a64;
     padding: 250px 70px;
 }
 #albuns{
-    background-color: #979494;
+    background-color: #2b2c40;
     padding: 250px 70px;
 }
 #musicas{
-    background-color: #747474;
+    background-color: #494a64;
     padding: 250px 70px;
 }
 
 .Caixas {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -66,4 +77,3 @@ a{
     margin-top: 10px;
     font-weight:bold;
 }
-
