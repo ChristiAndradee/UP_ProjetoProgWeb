@@ -1,59 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* VIEWPORT */
 body{
+    font-family: "Saira", sans-serif;
     margin: 0;
-    font-family: "Saira", sans-serif;
-    font-weight: bold;
+    padding: 0;
 }
 
-#janelaLogin{
-    width: 60%;
-    border: none;
-    border-radius: 15px;
-    padding: 30px 50px;
-    background-color: #333;
-    box-shadow: 0px 10px 40px #00000092;
-    color: #fff;
-}
-
-#janelaLogin h1{
-    font-size: 28px;
-    text-align: center;
-    color: #fff;
-}
-
-#janelaLogin input{
-    margin-left: 5px;
-    margin: 8px 0px;
-    padding: 8px 0px;
-}
-
-#botaoLogin{
-    font-family: "Saira", sans-serif;
-    
-    background-color: #6694cf;
-    padding: 5px;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    margin-top: 28px;
-    width: 100%;
-    box-shadow: 0px 10px 90px 5px #76a8e880;
-}
-
-.login-esquerda{
-    color: #6694cf; 
-    font-size: 20px;
-}
-
-.tamanho{
-    display: flex;
+/* PRINCIPAL */
+main {
+    background-color: #2b2c40;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 50px;
 }
 
-.tamanho > section > h1{
-    margin-right: 50px;
+input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+label{
+    margin-left: 3px;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+/* QUADRO DE LOGIN */
+.direita form{
+    padding: 70px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #32334a;
+    box-shadow: 0px 10px 40px #00000092;
+}
+
+/* TEXTO NO QUADRO DE LOGIN */
+.direita form h1{
+    text-align: center;
+    font-size: 30px;
+    color: #71e3da;
+    margin: 5px 0px 20px 0px;
+}
+
+/* BOTÃO DE LOGIN */
+.direita button{
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #32334a;
+    background-color: #71e3da;
+    box-shadow: 0px 10px 90px 5px #69ebe780;
+}
+
+.direita button:hover {
+    background-color: #5bbbb3;
+    cursor: pointer;
+}
+
+/* TEXTO TELA DE LOGIN */
+.esquerda{
+    color: #71e3da;
+    font-weight: 500;
+    font-size: 25px;
 }

@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Musicalizando</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="tamanho">
-        <section class="login-esquerda">
-            <h1>Ranqueie as suas<br>Músicas favoritas</h1>
-        </section>
-        <section class="login-direita">
-            <form>
-                <fieldset id="janelaLogin">
-                    <h1>LOGIN</h1>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="email" required>
-                    <br>
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="senha" required>
-                    <br>
-                    <button id="botaoLogin">LOGIN</button>
-                </fieldset>
-            </form>
-        </section>
-    </div>
-<script src="./script.js"></script>
+<main id="tamanho">
+    <section class="esquerda">
+        <h1>Ranqueie as suas<br>Músicas favoritas</h1>
+    </section>
+    <section class="direita">
+        <form>
+            <h1>Insira seus dados</h1>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="e-mail">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="senha">
+            <button type="submit">LOGIN</button>
+        </form>
+    </section>
+</main>
 </body>
 </html>
