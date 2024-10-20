@@ -6,7 +6,7 @@ btnSair.onclick = function() {
 }
 
 const login = document.getElementById('login');
-const formLogin = document.querySelector('#janelaLogin');
+const formLogin = document.querySelector('#login form');
 
 let usuarioMaster = [
     {nome: "Mr. Ryann", email: "manoValim@gmail.com", senha: "cadernoehvida123"},
@@ -18,7 +18,8 @@ formLogin.addEventListener('submit', evento =>{
 
     let msgErro = document.querySelector('.erro');
     if(msgErro) login.removeChild(msgErro);
-    let email = document.getElementById('email').value; //document refere-se ao HTML, pegar por id
+
+    let email = document.getElementById('email').value;
     let senha = document.getElementById('senha').value;
 
     usuarioMaster.forEach(usuario =>{
@@ -28,17 +29,15 @@ formLogin.addEventListener('submit', evento =>{
 
             window.location.href = "../inicio/index.html";
         }
-    }); //Foreach 
+    });
 
     let usuarioLogado = sessionStorage.getItem('usuarioLogado');
 
     if(!usuarioLogado){
-        let erro = document.createElement.add("p");
+        let erro = document.createElement('p');
         erro.classList.add("erro");
-        erro.innerText = "login ou senha invalidos!";
-        login.insertBefore(erro, login.firstElementChild);
-        document.querySelector("#login form").reset(); //Reseta o formulario
-    } //eventlister e document vai cair na prova
+        erro.innerText = "Login ou senha invalidos!";
 
+        /* ADICIONAR CAMINHO PARA PRINTAR A MENSAGEM DE ERRO */
+    }
 });
-
