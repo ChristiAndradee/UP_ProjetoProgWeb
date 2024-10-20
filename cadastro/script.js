@@ -1,16 +1,10 @@
-// MODAL
-/*const btnLogin = document.getElemenyById('btnLogin');
+// LOGIN
 const btnSair = document.getElementById('btnSair');
 
-btnLogin.onclick = function() {
-    btnLogin.showModal();
+btnSair.onclick = function() {
+    window.location.href = "../inicio/index.html";
 }
 
-btnSair.onclick = function() {
-    btnSair.close();
-}*/
-
-// LOGIN
 const login = document.getElementById('login');
 const formLogin = document.querySelector('#janelaLogin');
 
