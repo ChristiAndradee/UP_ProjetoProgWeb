@@ -1,8 +1,12 @@
-// LOGIN
+const btnLogin = document.getElementById('btnLogin');
 const btnSair = document.getElementById('btnSair');
 
-btnSair.onclick = function() {
-    window.location.href = "../inicio/index.html";
+btnLogin.onclick = function () {
+    login.showModal();
+}
+
+btnSair.onclick = function () {
+    login.close();
 }
 
 const login = document.getElementById('login');
@@ -27,7 +31,7 @@ formLogin.addEventListener('submit', evento =>{
             sessionStorage.setItem('usuarioLogado', true);
             sessionStorage.setItem('nomeUsuario', usuario.nome);
 
-            window.location.href = "../inicio/index.html";
+            /* window.location.href = "diretório do novo HTML para a página de cadastro das músicas"; */
         }
     });
 
@@ -36,8 +40,7 @@ formLogin.addEventListener('submit', evento =>{
     if(!usuarioLogado){
         let erro = document.createElement('p');
         erro.classList.add("erro");
-        erro.innerText = "Login ou senha invalidos!";
-
-        /* ADICIONAR CAMINHO PARA PRINTAR A MENSAGEM DE ERRO */
+        
+        /* Arrumar a mensagem de erro de email/senha errados */
     }
 });

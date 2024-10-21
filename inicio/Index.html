@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicalizando</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styleMain.css">
+    <script src="./scriptMain.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <a href="#artistas">Top Artistas</a>
             <a href="#albuns">Top Albuns</a>
             <a href="#musicas">Top Músicas</a>
-            <a href="../login/index.html">Login</a>
+            <a href="#login" id="btnLogin">Login</a>
         </nav>
     </header>
 <main>
@@ -143,6 +144,19 @@
                 
             </div>
     </section>
+
+    <dialog id = "login">
+        <form>
+            <div id="localErro"></div>
+            <h2>Insira seus dados</h1>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="e-mail">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="senha">
+            <button type="submit">LOGIN</button>
+            <button type="button" id="btnSair">SAIR</button>
+        </form>
+    </dialog>
 </main>
 </body>
 </html>
