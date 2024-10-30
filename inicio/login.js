@@ -13,7 +13,7 @@ const login = document.getElementById('login');
 const formLogin = document.querySelector("#login form");
 
 let usuarioMaster = [
-    {nome: 'root', email: 'root@email.com', senha: 'root'},
+    {nome: 'master', email: 'master@email.com', senha: 'master'},
     {nome: 'Christian', email: 'christian@email.com', senha: '1234'},
     {nome: 'Ryann', email: 'ryann@email.com', senha: '4321'}
 ];

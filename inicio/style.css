@@ -42,19 +42,39 @@ nav a{
 
 nav a:last-child{ margin-left: auto; }
 
-#inicio{
+section p{
+    text-align: center;
+}
+
+tr, th, td{
+    text-align: center;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+#inicio, #generos, #albuns{
     padding: 350px 50px;
     background-color: #aaa;
 }
 
-#generos, #albuns{
+#playlistMes{
+    padding: 225px 50px 350px 50px;
+    background-color: #ddd;
+}
+
+#artistas{
     padding: 350px 50px;
     background-color: #ddd;
 }
 
-#artistas, #musicas{
-    padding: 350px 50px;
-    background-color: #aaa;
+#musicas{
+    padding: 370px 50px;
+    background-color: #ddd;
+}
+
+#tabela1{
+    margin: auto;
+    border-collapse: collapse;
 }
 
 #login{
@@ -119,6 +139,12 @@ nav a:last-child{ margin-left: auto; }
 }
 
 .tituloSection{
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 20px;
+}
+.subtituloSection{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
