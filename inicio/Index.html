@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicalizando</title>
-    <link rel="stylesheet" href="./styleMain.css">
-    <script src="./scriptMain.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./login.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <a href="#inicio">Inicio</a>
             <a href="#generos">Generos</a>
             <a href="#artistas">Top Artistas</a>
             <a href="#albuns">Top Albuns</a>
             <a href="#musicas">Top Músicas</a>
-            <a href="#login" id="btnLogin">Login</a>
+            <a href="#inicio" id="btnLogin">Login</a>
         </nav>
     </header>
 <main>
     <section id="inicio">
-        <h1>Inicio</h1>
-        <p>Projeto acadêmico da Universidade Positivo, no curso de Ciências da Computação, desenvolvemos um site voltado para músicas, com o objetivo de demonstrar os conhecimentos adquiridos ao longo do curso. O site foi criado para fins educativos, refletindo nossas habilidades técnicas em áreas como programação, design de interfaces e desenvolvimento web</p>
+        <h1 class="tituloSection">Inicio</h1>
+        <p>Este projeto consiste na criação de um site com o objetivo de demonstrar nossas habilidades técnicas em programação. Através dele, buscamos evidenciar os conhecimentos adquiridos ao longo do semestre na disciplina de Desenvolvimento Web Básico, refletindo nossa capacidade de aplicar conceitos teóricos em um contexto prático e criativo.</p>
     </section>
 
     <section id = "generos">
-        <h1>Generos</h1>
+        <h1 class="tituloSection">Generos</h1>
             <div class="Caixas">
                 <div class="caixa">
                     <a href="https://music.youtube.com/moods_and_genres" target="_blank">
@@ -55,7 +55,7 @@
     </section>
 
     <section id = "artistas">
-        <h1>Top Artistas</h1>
+        <h1 class="tituloSection">Top Artistas</h1>
             <div class="Caixas">
                 <div class="caixa">
                     <a href="https://www.youtube.com/@TheBeatles" target="_blank">
@@ -85,7 +85,7 @@
     </section>
 
     <section id = "albuns">
-        <h1>Top Albuns</h1>
+        <h1 class="tituloSection">Top Albuns</h1>
             <div class="Caixas">
                 <div class="caixa">
                     <a href="https://www.youtube.com/playlist?list=OLAK5uy_mgp0d7FARGK-Yl03zY2g4KCmkfBjGlHbQ" target="_blank">
@@ -115,7 +115,7 @@
     </section>    
     
     <section id = "musicas">
-        <h1>Top Músicas</h1>
+        <h1 class="tituloSection">Top Músicas</h1>
             <div class="Caixas">
                 <div class="caixa">
                     <a href="https://www.youtube.com/watch?v=HuS5NuXRb5Y" target="_blank">
@@ -145,18 +145,22 @@
             </div>
     </section>
 
-    <dialog id = "login">
+    <dialog id="login">
+        <h2>LOGIN</h2>
         <form>
-            <div id="localErro"></div>
-            <h2>Insira seus dados</h1>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="e-mail">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="senha">
-            <button type="submit">LOGIN</button>
-            <button type="button" id="btnSair">SAIR</button>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="e-mail" required><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="senha" required><br>
+            <div class="botoesLogin">
+                <button type="submit">LOGIN</button>
+                <button type="button" id="btnSair">SAIR</button>
+            </div>
         </form>
     </dialog>
 </main>
+<footer>
+    <p>&copy;2024 - Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
