@@ -46,15 +46,9 @@ section p{
     text-align: center;
 }
 
-tr, th, td{
-    text-align: center;
-    padding: 10px 50px;
-    border: 1px solid black;
-}
-
-#inicio, #generos, #albuns{
+#inicio, #albuns{
     padding: 350px 50px;
-    background-color: #aaa;
+    background-color: #bbb;
 }
 
 #playlistMes{
@@ -62,19 +56,44 @@ tr, th, td{
     background-color: #ddd;
 }
 
-#artistas{
-    padding: 350px 50px;
-    background-color: #aaa;
-}
-
-#musicas{
+#musicas, #generos{
     padding: 370px 50px;
     background-color: #ddd;
 }
 
-#tabela1{
+#artistas{
+    padding: 225px 50px 350px 50px;
+    background-color: #bbb;
+}
+
+#tabelaPlaylistMensal{
     margin: auto;
     border-collapse: collapse;
+}
+
+#tabelaPlaylistMensal > tr, th, td{
+    text-align: center;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+#tabelaPlaylistMensal thead{
+    background-color: #bbb;
+}
+
+#playlistArtistasDaSemana{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#playlistArtistasDaSemana > tr, th, td{
+    text-align: center;
+    padding: 10px 30px;
+    border: 1px solid black;
+}
+
+#playlistArtistasDaSemana thead{
+    background-color: #999;
 }
 
 #login{
@@ -82,7 +101,7 @@ tr, th, td{
     padding: 50px;
     border: none;
     border-radius: 20px;
-    background-color: #eee;
+    background-color: #ddd;
     box-shadow: 0px 0px 100px #00000099;
 }
 
@@ -97,6 +116,10 @@ tr, th, td{
 #login input{
     width: 97%;
     margin-bottom: 10px;
+}
+
+.albunsLink{
+    color: black;
 }
 
 .botoesLogin{

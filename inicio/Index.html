@@ -12,8 +12,8 @@
     <nav class="menu">
         <a href="#inicio">INICIO</a>
         <a href="#playlistMes">PLAYLIST DO MÊS</a>
+        <a href="#artistas">ARTISTAS DA SEMANA</a>
         <a href="#generos">GENEROS</a>
-        <a href="#artistas">TOP ARTISTAS</a>
         <a href="#albuns">TOP ALBUNS</a>
         <a href="#musicas">TOP MÚSICAS</a>
         <a href="#inicio" id="btnLogin">LOGIN</a>
@@ -28,7 +28,7 @@
     <section id="playlistMes">
         <h1 class="tituloSection">PLAYLIST DO MÊS</h1>
         <h4 class="subtituloSection">GÊNERO: ROCK</h4>
-        <table id="tabela1">
+        <table id="tabelaPlaylistMensal">
             <thead>
                 <tr>
                     <th>#</th>
@@ -111,7 +111,122 @@
                 </tr>
             </tbody>
         </table>
-        
+    </section>
+
+    <section id = "artistas">
+        <h1 class="tituloSection">ARTISTAS DA SEMANA</h1>
+        <table id="playlistArtistasDaSemana">
+            <thead>
+                <tr>
+                    <th>NOME DO(A)<br>ARTISTA | BANDA</th>
+                    <th>INTEGRANTES</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>ÁLBUNS<br><small>(abra o link no spotify)</small></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>RADIOHEAD</th>
+                    <td>Thom Yorke, Jonny Greenwood,<br>Colin Greenwood, Ed O'Brien, Philip Selway</td>
+                    <td>Formada em 1985, em Oxfordshire, Inglaterra.<br>Banda de rock alternativo conhecida por explorar temas existenciais.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=n_qnmTVQQ66Uz4xzpIsbdw" class="albunsLink" target="_blank">OK Computer (1997)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/6GjwtEZcfenmOf6l18N7T7?si=kCqJ0XpMTzOMBLIc9fLYdg" class="albunsLink" target="_blank">Kid A (2000)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/5vkqYmiPBYLaalcmjujWxK?si=T7S-tIBcRgqhXnBkP3fEWA" class="albunsLink" target="_blank">In Rainbows (2007)</a>
+                    </td>                    
+                </tr>
+                <tr>
+                    <th>LINKIN PARK</th>
+                    <td>Mike Shinoda, Chester Bennington,<br>Brad Delson, Dave Farrell, Joe Hahn, Rob Bourdon</td>
+                    <td>Formada em 1996, em Agoura Hills, Califórnia.<br>Banda que mescla rock com rap e eletrônico.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6PFPjumGRpZnBzqnDci6qJ?si=77f29fddfe1b4962" class="albunsLink" target="_blank">Hybrid Theory (2000)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/4Gfnly5CzMJQqkUFfoHaP3?si=ccbd025593a54f0f" class="albunsLink" target="_blank">Meteora (2003)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/2tlTBLz2w52rpGCLBGyGw6?si=42262898c5e24c88" class="albunsLink" target="_blank">Minutes to Midnight (2007)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>RED HOT CHILI PEPPERS</th>
+                    <td>Anthony Kiedis, Flea,<br>Chad Smith, John Frusciante</td>
+                    <td>Formada em 1983, em Los Angeles, EUA.<br>Mistura rock, punk e funk, com temas diversificados.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/30Perjew8HyGkdSmqguYyg?si=01bfb75bc7054097" class="albunsLink" target="_blank">Blood Sugar Sex Magik (1991)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/0fLhefnjlIV3pGNF9Wo8CD?si=g46Up9UOSU6-fPJgPd9uPw" class="albunsLink" target="_blank">Californication (1999)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/6deiaArbeoqp1xPEGdEKp1?si=bPRcYKoyRtS92hirMn00aw" class="albunsLink" target="_blank">By the Way (2002)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>COLDPLAY</th>
+                    <td>Chris Martin, Jonny Buckland,<br>Guy Berryman, Will Champion</td>
+                    <td>Formada em 1996, em Londres. Conhecida<br>por melodias emotivas e letras introspectivas.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6ZG5lRT77aJ3btmArcykra?si=6gv0i9ogQ6iqnTy46VNnag" class="albunsLink" target="_blank">Parachutes (2000)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/0RHX9XECH8IVI3LNgWDpmQ?si=mmT1a0IYTymss5uLMmQvMQ" class="albunsLink" target="_blank">A Rush of Blood to the Head (2002)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/3cfAM8b8KqJRoIzt3zLKqw?si=m6y2BTdQQ2KFBtGcYHu4gg" class="albunsLink" target="_blank">A Head Full of Dreams (2015)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>PINK FLOYD</th>
+                    <td>Syd Barrett, Roger Waters,<br>Richard Wright, Nick Mason, David Gilmour</td>
+                    <td>Formada em 1965, na Inglaterra. Banda de<br>rock progressivo famosa por álbuns conceituais.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/4LH4d3cOWNNsVw41Gqt2kv?si=yTDntK1WSQmzmf-P2PEdtw" class="albunsLink" target="_blank">The Dark Side of the Moon (1973)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/0bCAjiUamIFqKJsekOYuRw?si=nHS6biI-SkuTPrjzoQz9yw" class="albunsLink" target="_blank">Wish You Were Here (1975)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/5Dbax7G8SWrP9xyzkOvy2F?si=PPhIFupXRfyW-SmKPtJnBA" class="albunsLink" target="_blank">The Wall (1979)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>GREEN DAY</th>
+                    <td>Billie Joe Armstrong,<br>Mike Dirnt, Tré Cool</td>
+                    <td>Banda punk rock americana que alcançou sucesso<br>nos anos 90 e continuou forte nas décadas seguintes.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/4uG8q3GPuWHQlRbswMIRS6?si=nh5u0XLRSZq-JA2kxiIlzg" class="albunsLink" target="_blank">Dookie (1994)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/19ObsGobUuBr11M6ysFMug?si=HpW6xdxKQcGCHgk57sqOzQ" class="albunsLink" target="_blank">American Idiot (2004)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/1AHZd3C3S8m8fFrhFxyk79?si=u4P0QLc0SvW12HyVp979Rw" class="albunsLink" target="_blank">21st Century Breakdown (2009)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>SYSTEM OF A DOWN</th>
+                    <td>Serj Tankian, Daron Malakian,<br>Shavo Odadjian, John Dolmayan</td>
+                    <td>Formada em 1994, em Glendale, Califórnia, EUA.<br>Mistura metal alternativo com influências armênias.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6jWde94ln40epKIQCd8XUh?si=bc0723345e1443e8" class="albunsLink" target="_blank">Toxicity (2001)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/0cn6MHyx4YuZauaB7Pb66o?si=4a3c083d1f714f4b" class="albunsLink" target="_blank">Mezmerize (2005)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/3QxX3NbWyLlLG6lP1xveL3?si=14da47c8aed04b45" class="albunsLink" target="_blank">Hypnotize (2005)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>ARCTIC MONKEYS</th>
+                    <td>Alex Turner, Matt Helders,<br>Jamie Cook, Nick O'Malley</td>
+                    <td>Formada em 2002, em Sheffield, Inglaterra.<br>Banda de rock indie conhecida pelo som enérgico.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/50Zz8CkIhATKUlQMbHO3k1?si=1695c16d297a4c58" class="albunsLink" target="_blank">Whatever People Say I Am,<br>That’s What I’m Not (2006)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/1XkGORuUX2QGOEIL4EbJKm?si=749247a765824a28" class="albunsLink" target="_blank">Favourite Worst Nightmare (2007)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/78bpIziExqiI9qztvNFlQu?si=dd69f0fa421a4735" class="albunsLink" target="_blank">AM (2013)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>EMINEM</th>
+                    <td>Marshall Bruce Mathers III</td>
+                    <td>Rapper americano de Detroit, famoso por letras impactantes<br>e um estilo único. Carreira iniciada em 1996.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6t7956yu5zYf5A829XRiHC?si=5VH52A9jS26MfwgEcUku6A" class="albunsLink" target="_blank">The Marshall Mathers LP (2000)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/2cWBwpqMsDJC1ZUwz813lo?si=S8UFZ0bwSAmZxwj2LeBK3g" class="albunsLink" target="_blank">The Eminem Show (2002)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/3HNnxK7NgLXbDoxRZxNWiR?si=030b0efe97f7415e" class="albunsLink" target="_blank">Kamikaze (2018)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>BRUNO MARS</th>
+                    <td>Bruno Mars</td>
+                    <td>Cantor, compositor e produtor americano, conhecido<br>por seu estilo pop e performances energéticas.</td>
+                    <td>
+                        <a href="https://open.spotify.com/intl-pt/album/6J84szYCnMfzEcvIcfWMFL?si=d7d52a2dbb8e4cbe" class="albunsLink" target="_blank">Doo-Wops & Hooligans (2010)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/58ufpQsJ1DS5kq4hhzQDiI?si=05c7c0ad3a234cd9" class="albunsLink" target="_blank">Unorthodox Jukebox (2012)</a><br>
+                        <a href="https://open.spotify.com/intl-pt/album/4PgleR09JVnm3zY1fW3XBA?si=5b115bf4e1c6484b" class="albunsLink" target="_blank">24K Magic (2016)</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id = "generos">
@@ -139,36 +254,6 @@
                     <a href="https://music.youtube.com/moods_and_genres" target="_blank">
                     <img src="../fotos/samba.png" alt="">
                     <p>4º Samba</p>
-                    </a>   
-                </div>
-            </div>
-    </section>
-
-    <section id = "artistas">
-        <h1 class="tituloSection">TOP ARTISTAS</h1>
-            <div class="Caixas">
-                <div class="caixa">
-                    <a href="https://www.youtube.com/@TheBeatles" target="_blank">
-                    <img src="../fotos/Beatles.gif" alt="">
-                    <p>1º The Beatles</p>   
-                    </a>
-                </div>
-                <div class="caixa">
-                    <a href="https://www.youtube.com/channel/UC5k4fsA9AhxNLgMQa36CVdg" target="_blank">
-                    <img src="../fotos/CharlieBrown.jpg" alt="">
-                    <p>2º Charlie Brown Jr</p>
-                    </a>   
-                </div>
-                <div class="caixa">
-                    <a href="https://www.youtube.com/channel/UCOUqW2QqiOFK9fXA5cAOENA" target="_blank">
-                    <img src="../fotos/Pericles.jpg" alt="">
-                    <p>3º Pericles</p>
-                    </a>    
-                </div>
-                <div class="caixa">
-                    <a href="https://www.youtube.com/channel/UCSrA5JaXpR21z_E1FDA03RA" target="_blank">
-                    <img src="../fotos/Ramones.png" alt="">
-                    <p>4º Ramones</p>
                     </a>   
                 </div>
             </div>
