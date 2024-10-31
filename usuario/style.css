@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 *{
     font-family: "Saira", sans-serif;
     margin: 0;
@@ -22,6 +23,8 @@ nav a{
     transition: padding 0.2s ease-in-out;
     text-decoration: none;
 }
+
+nav a:last-child{ margin-left: auto; }
 
 tr,td{
     text-align: center;
@@ -95,6 +98,64 @@ th{
     margin-top: 5px;
 }
 
+dialog {
+    margin: auto; /* Garante que o dialog fique centralizado na tela */
+}
+
+#feedback {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    justify-content: center;
+}
+
+#feedback::backdrop{ backdrop-filter: blur(5px); }
+
+#feedback h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#formFeedback {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#formFeedback label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#formFeedback input[type="checkbox"],
+#formFeedback input[type="radio"] {
+    margin-right: 10px;
+}
+
+#formFeedback textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    resize: vertical;
+}
+
+#formFeedback button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 
 

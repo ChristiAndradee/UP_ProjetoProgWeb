@@ -1,3 +1,13 @@
+const btnFeed = document.getElementById('btnFeed');
+
+btnFeed.onclick = function () { feed.showModal(); };
+btnEnviar.onclick = function () { 
+    feed.close(); 
+
+    let msgErro = document.querySelector('.erro');
+    if (msgErro) msgErro.remove();
+};
+
 let dados = JSON.parse(localStorage.getItem('dados')) || [];
 
 let genero = document.getElementById('gen');
