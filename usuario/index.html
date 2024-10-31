@@ -15,79 +15,77 @@
     </nav>
 
     <main>
-        <header>
-            <a href="#" id="logout"> Sair</a>
-        </header>
-        
-        <section id="regPlayList">
-            <form id="formFavoritas">
-                <h1>Adicione suas músicas favoritas</h1>
-                <label for="nomeMusica">Música:</label>
-                <input type="text" id="nomeMusica" name="nomeMusica" required><br>
-        
-                <label for="nomeArtista">Artista:</label>
-                <input type="text" id="nomeArtista" name="nomeArtista" required><br>
+            <header>
+                <a href="#" id="logout"> Sair</a>
+            </header>
+            
+            <section id="regPlayList">
+                <form id="formFavoritas">
+                    <h1>Adicione suas músicas favoritas</h1>
+                    <label for="nomeMusica">Música:</label>
+                    <input type="text" id="nomeMusica" name="nomeMusica" required><br>
+            
+                    <label for="nomeArtista">Artista:</label>
+                    <input type="text" id="nomeArtista" name="nomeArtista" required><br>
 
-                <label for="gen">Genero:</label>
-                <input type="text" id="gen" name="gen"><br>
-        
-                <label for="tempoMusica">Tempo</label>
-                <input type="text" id="tempoMusica" name="tempoMusica" ><br>
+                    <label for="gen">Genero:</label>
+                    <input type="text" id="gen" name="gen"><br>
+            
+                    <label for="tempoMusica">Tempo</label>
+                    <input type="text" id="tempoMusica" name="tempoMusica" ><br>
 
-                <label for="linkMusica">Link:</label>
-                <input type="text" id="linkMusica" name="linkMusica" required><br>
+                    <label for="linkMusica">Link:</label>
+                    <input type="text" id="linkMusica" name="linkMusica" required><br>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </section>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
 
-        <section id="tabela">
-            <h1>Playlist</h1>
-            <table id="tabelaPlayList">
-                <thead>
-                    <tr>
-                        <th>Musica</th>
-                        <th>Artista</th>
-                        <th>Genero</th>
-                        <th>Tempo</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>&nbsp;</tbody>
-            </table>
-        </section>
-    </div>
+            <section id="tabela">
+                <h1>Playlist</h1>
+                <table id="tabelaPlayList">
+                    <thead>
+                        <tr>
+                            <th>Musica</th>
+                            <th>Artista</th>
+                            <th>Genero</th>
+                            <th>Tempo</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>&nbsp;</tbody>
+                </table>
+            </section>
 
-    <dialog id="feed">
-        <aside id="feedback">
-            <h2>Feedback e Newsletter</h2>
-            <form id="formFeedback">
-                <label for="newsletterCheckbox">
-                    <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox">
-                    Deseja receber nossa Newsletter contendo uma playlist de 10 músicas por mês no email?
-                </label>
-        
-                <fieldset>
-                    <legend>Gostou da playlist deste mês?</legend>
-                    <label for="gostouSim">
-                        <input type="radio" id="gostouSim" name="gostouPlaylist" value="sim">
-                        Sim
+        <dialog id="feed">
+            <aside id="feedback">
+                <h2>Feedback e Newsletter</h2>
+                <form id="formFeedback">
+                    <label for="newsletterCheckbox">
+                        <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox">
+                        Deseja receber nossa Newsletter contendo uma playlist de 10 músicas por mês no email?
                     </label>
-                    <label for="gostouNao">
-                        <input type="radio" id="gostouNao" name="gostouPlaylist" value="nao">
-                        Não
-                    </label>
-                </fieldset>
-        
-                <label for="melhorias">Dê uma ideia de melhorias para a nossa página:</label>
-                <textarea id="melhorias" name="melhorias" rows="4" placeholder="Escreva aqui..."></textarea>
-        
-                <button type="submit" id = "btnEnviar">Enviar</button>
-            </form>
-        </aside>
-    </dialog>
-
+            
+                    <fieldset>
+                        <legend>Gostou da playlist deste mês?</legend>
+                        <label for="gostouSim">
+                            <input type="radio" id="gostouSim" name="gostouPlaylist" value="sim">
+                            Sim
+                        </label>
+                        <label for="gostouNao">
+                            <input type="radio" id="gostouNao" name="gostouPlaylist" value="nao">
+                            Não
+                        </label>
+                    </fieldset>
+            
+                    <label for="melhorias">Dê uma ideia de melhorias para a nossa página:</label>
+                    <textarea id="melhorias" name="melhorias" rows="4" placeholder="Escreva aqui..."></textarea>
+            
+                    <button type="submit" id = "btnEnviar">Enviar</button>
+                </form>
+            </aside>
+        </dialog>
     </main>
     <script src="script.js"></script>
 </body>
