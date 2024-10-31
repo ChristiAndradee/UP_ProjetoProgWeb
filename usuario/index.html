@@ -10,12 +10,15 @@
 <body>
     <nav>
         <a href="#">Playlist - Favoritas</a>
+        <a href="#inicio" id="btnFeed">Feedback e Newsletter</a>
+        <a href="../inicio/Index.html">Sair</a>
     </nav>
 
     <main>
         <header>
             <a href="#" id="logout"> Sair</a>
         </header>
+        
         <section id="regPlayList">
             <form id="formFavoritas">
                 <h1>Adicione suas músicas favoritas</h1>
@@ -38,6 +41,7 @@
                 <button type="submit">Cadastrar</button>
             </form>
         </section>
+
         <section id="tabela">
             <h1>Playlist</h1>
             <table id="tabelaPlayList">
@@ -54,6 +58,36 @@
             </table>
         </section>
     </div>
+
+    <dialog id="feed">
+        <aside id="feedback">
+            <h2>Feedback e Newsletter</h2>
+            <form id="formFeedback">
+                <label for="newsletterCheckbox">
+                    <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox">
+                    Deseja receber nossa Newsletter contendo uma playlist de 10 músicas por mês no email?
+                </label>
+        
+                <fieldset>
+                    <legend>Gostou da playlist deste mês?</legend>
+                    <label for="gostouSim">
+                        <input type="radio" id="gostouSim" name="gostouPlaylist" value="sim">
+                        Sim
+                    </label>
+                    <label for="gostouNao">
+                        <input type="radio" id="gostouNao" name="gostouPlaylist" value="nao">
+                        Não
+                    </label>
+                </fieldset>
+        
+                <label for="melhorias">Dê uma ideia de melhorias para a nossa página:</label>
+                <textarea id="melhorias" name="melhorias" rows="4" placeholder="Escreva aqui..."></textarea>
+        
+                <button type="submit" id = "btnEnviar">Enviar</button>
+            </form>
+        </aside>
+    </dialog>
+
     </main>
     <script src="script.js"></script>
 </body>
