@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Saira", sans-serif;
+    margin: 0;
+}
+
+dialog p{
+    text-align: center;
+}
+
+dialog p.erro{
+    border-radius: 15px;
+    background-color: rgb(255, 190, 190);
+    color: rgb(86, 2, 2);
+    text-align: center;
+}
+
+footer{
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+nav{
+    padding: 16px 0px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+nav a{
+    padding: 0px 16px;
+    font-weight: bold;
+    color: white;
+    transition: padding 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+nav a:last-child{ margin-left: auto; }
+
+section p{
+    text-align: center;
+}
+
+#inicio, #albuns{
+    padding: 350px 50px;
+    background-color: #bbb;
+}
+
+#playlistMes{
+    padding: 225px 50px 350px 50px;
+    background-color: #ddd;
+}
+
+#musicas, #generos{
+    padding: 370px 50px;
+    background-color: #ddd;
+}
+
+#artistas{
+    padding: 225px 50px 350px 50px;
+    background-color: #bbb;
+}
+
+#tabelaPlaylistMensal{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#tabelaPlaylistMensal > tr, th, td{
+    text-align: center;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+
+#tabelaPlaylistMensal thead{
+    background-color: #bbb;
+}
+
+#playlistArtistasDaSemana{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#playlistArtistasDaSemana > tr, th, td{
+    text-align: center;
+    padding: 10px 30px;
+    border: 1px solid black;
+}
+
+#playlistArtistasDaSemana thead{
+    background-color: #999;
+}
+
+#login{
+    margin: auto;
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ddd;
+    box-shadow: 0px 0px 100px #00000099;
+}
+
+#login::backdrop{ backdrop-filter: blur(5px); }
+
+#login h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+#login input{
+    width: 97%;
+    margin-bottom: 10px;
+}
+
+.albunsLink{
+    color: black;
+}
+
+.botoesLogin{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botoesLogin button{
+    border: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #444444;
+    color: white;
+    font-weight: bold;
+}
+
+.botoesLogin button:hover{ background-color: #000000; }
+
+.Caixas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa {
+    text-align: center;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.caixa img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.caixa a{
+    text-decoration: none;
+    color: black;
+}
+
+.tituloSection{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.subtituloSection{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
