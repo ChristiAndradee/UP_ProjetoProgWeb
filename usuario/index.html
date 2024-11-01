@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicalizando | Usuário</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <nav>
-        <a href="#">Playlist - Favoritas</a>
-        <a href="#inicio" id="btnFeed">Feedback e Newsletter</a>
-        <a href="../inicio/Index.html">Sair</a>
-    </nav>
-
-    <main>
+<nav>
+    <a href="#">Playlist - Favoritas</a>
+    <a href="#inicio" id="btnFeed">Feedback e Newsletter</a>
+    <a href="../inicio/Index.html">Sair</a>
+</nav>
+<main>
         <header>
             <a href="#" id="logout"> Sair</a>
         </header>
@@ -57,7 +56,6 @@
                 <tbody>&nbsp;</tbody>
             </table>
         </section>
-    </div>
 
     <dialog id="feed">
         <aside id="feedback">
@@ -66,7 +64,7 @@
                 <label for="newsletterCheckbox">
                     <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox">
                     Deseja receber nossa Newsletter contendo uma playlist de 10 músicas por mês no email?
-                </label>
+                </label><br>
         
                 <fieldset>
                     <legend>Gostou da playlist deste mês?</legend>
@@ -78,18 +76,19 @@
                         <input type="radio" id="gostouNao" name="gostouPlaylist" value="nao">
                         Não
                     </label>
-                </fieldset>
+                </fieldset><br>
         
                 <label for="melhorias">Dê uma ideia de melhorias para a nossa página:</label>
                 <textarea id="melhorias" name="melhorias" rows="4" placeholder="Escreva aqui..."></textarea>
-        
-                <button type="submit" id = "btnEnviar">Enviar</button>
+
+                <div id="feedbackDireita">
+                    <button type="reset">Limpar</button>
+                    <button type="submit" id = "btnEnviarFdbck">Enviar</button>
+                    <button id = "btnSairFdbck">Sair</button>
+                </div>
             </form>
         </aside>
     </dialog>
-
-    </main>
-    <script src="script.js"></script>
+</main>
 </body>
-
 </html>

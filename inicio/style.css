@@ -3,6 +3,11 @@
 *{
     font-family: "Saira", sans-serif;
     margin: 0;
+    color: white;
+}
+
+* h1{
+    color: #71e3da ;
 }
 
 dialog p{
@@ -17,7 +22,6 @@ dialog p.erro{
 }
 
 footer{
-    color: white;
     padding: 10px;
     background-color: black;
 }
@@ -35,7 +39,6 @@ nav{
 nav a{
     padding: 0px 16px;
     font-weight: bold;
-    color: white;
     transition: padding 0.2s ease-in-out;
     text-decoration: none;
 }
@@ -46,24 +49,34 @@ section p{
     text-align: center;
 }
 
-#inicio, #albuns{
+#inicio{
     padding: 350px 50px;
-    background-color: #bbb;
+    background-color: #32334a;
 }
 
 #playlistMes{
     padding: 225px 50px 350px 50px;
-    background-color: #ddd;
-}
-
-#musicas, #generos{
-    padding: 370px 50px;
-    background-color: #ddd;
+    background-color: #2b2c40;
 }
 
 #artistas{
     padding: 225px 50px 350px 50px;
-    background-color: #bbb;
+    background-color: #32334a;
+}
+
+#generos{
+    padding: 370px 50px;
+    background-color: #2b2c40;
+}
+
+#albuns{
+    padding: 370px 50px;
+    background-color: #32334a;
+}
+
+#musicas{
+    padding: 370px 50px 430px 50px;
+    background-color: #2b2c40;
 }
 
 #tabelaPlaylistMensal{
@@ -71,14 +84,15 @@ section p{
     border-collapse: collapse;
 }
 
-#tabelaPlaylistMensal > tr, th, td{
+#tabelaPlaylistMensal > tr, td{
     text-align: center;
     padding: 10px 50px;
     border: 1px solid black;
+    background-color: #45475f;
 }
 
 #tabelaPlaylistMensal thead{
-    background-color: #bbb;
+    background-color: #242538;
 }
 
 #playlistArtistasDaSemana{
@@ -93,7 +107,7 @@ section p{
 }
 
 #playlistArtistasDaSemana thead{
-    background-color: #999;
+    background-color: #242538;
 }
 
 #login{
@@ -101,25 +115,27 @@ section p{
     padding: 50px;
     border: none;
     border-radius: 20px;
-    background-color: #ddd;
+    background-color: #2b2c40;
     box-shadow: 0px 0px 100px #00000099;
 }
 
 #login::backdrop{ backdrop-filter: blur(5px); }
 
 #login h2{
+    color: #71e3da ;
     font-size: 2rem;
     text-align: center;
     padding: 20px 30px;
 }
 
 #login input{
+    color: black;
     width: 97%;
     margin-bottom: 10px;
 }
 
 .albunsLink{
-    color: black;
+    color: rgb(29, 133, 165);
 }
 
 .botoesLogin{
@@ -134,7 +150,6 @@ section p{
     border-radius: 5px;
     cursor: pointer;
     background-color: #444444;
-    color: white;
     font-weight: bold;
 }
 
@@ -171,3 +186,5 @@ section p{
     font-size: 1rem;
     margin-bottom: 10px;
 }
+
+.fonteNegrito{ font-weight: bold; }
