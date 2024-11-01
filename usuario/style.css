@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 *{
     font-family: "Saira", sans-serif;
     margin: 0;
 }
+
+dialog { margin: auto; }
 
 nav{
     padding: 16px 0px;
@@ -35,14 +36,18 @@ tr,td{
 th{
     text-align: center;
     color: #ddd;
-    background-color: #333;
+    background-color: #242538;
     padding: 10px 50px;
     border: 1px solid black;
 }
 
 #tabela{
     background-color: #32334a;
-    margin: 0;
+    padding-bottom: 100px;
+}
+
+#tabela > table{
+    background-color: #45475f;
 }
 
 #tabelaPlayList{
@@ -59,6 +64,7 @@ th{
 
 #tabela a{
     color: #71e3da;
+    padding: 0px 8px;
 }
 
 #regPlayList {
@@ -68,6 +74,16 @@ th{
     min-height: 100vh;
     background-color: #2b2c40;
 }
+
+#feed{
+    margin: auto;
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px #00000099;
+}
+
+#feed::backdrop{ backdrop-filter: blur(5px); }
 
 #formFavoritas {
     width: 100%;
@@ -103,14 +119,20 @@ th{
     background-color: #8a5f5f;
 }
 
+#formFavoritas button[type="reset"]:hover {
+    background-color: #a88080;
+}
+
 #formFavoritas button[type="submit"] {
     background-color: #5f608a;
     margin-top: 5px;
 }
 
-dialog {
-    margin: auto; /* Garante que o dialog fique centralizado na tela */
+#formFavoritas button[type="submit"]:hover {
+    background-color: #6f709b;
+    margin-top: 5px;
 }
+
 
 #feedback {
     background-color: #fafafa;
@@ -122,18 +144,10 @@ dialog {
     justify-content: center;
 }
 
-#feedback::backdrop{  backdrop-filter: blur(5px); }
-
 #feedback h2 {
     color: #333;
     margin-bottom: 15px;
     text-align: center;
-}
-
-#formFeedback {
-    display: flex;
-    flex-direction: column;
-
 }
 
 #formFeedback label {
@@ -165,4 +179,11 @@ dialog {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+}
+
+#formFeedback button:hover{ background-color: #6dc970; }
+
+#feedbackDireita{
+    text-align: center;
+    padding: 10px;
 }

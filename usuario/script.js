@@ -1,12 +1,21 @@
 const btnFeed = document.getElementById('btnFeed');
+const btnEnviarFdbck = document.getElementById('btnEnviarFdbck');
+const btnSairFdbck = document.getElementById('btnSairFdbck');
 
 btnFeed.onclick = function () { feed.showModal(); };
-btnEnviar.onclick = function () { 
-    feed.close(); 
+btnEnviarFdbck.onclick = (e) => {
+    e.preventDefault(); 
 
     let msgErro = document.querySelector('.erro');
     if (msgErro) msgErro.remove();
+
+    alert('Obrigado pela sua contribuição!')
+    feed.close(); 
 };
+
+btnSairFdbck.onclick = function () {
+    feed.close();
+}
 
 let dados = JSON.parse(localStorage.getItem('dados')) || [];
 
@@ -45,7 +54,7 @@ function atualizarTabela() {
             <td>${favPlayList.tempo}</td>
             <td>
                 <a href="#" onclick="abrirMusica('${favPlayList.link}')">Ouvir</a>
-                <a href="#" onclick="removerMusica(${chave})">Excluir</a>
+                <a href="#" onclick="removerMusica(${chave})" style="color: #e37171;">Excluir</a>
             </td>
         `;
         tbody.appendChild(linha);
