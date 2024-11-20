@@ -163,11 +163,14 @@ th{
 
 #formFeedback textarea {
     width: 100%;
+    max-width: 400px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px auto;
+    display: block;
     resize: vertical;
+    box-sizing: border-box; 
 }
 
 #formFeedback button {
@@ -186,4 +189,17 @@ th{
 #feedbackDireita{
     text-align: center;
     padding: 10px;
+}
+
+.mensagem-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }

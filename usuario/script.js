@@ -1,16 +1,42 @@
 const btnFeed = document.getElementById('btnFeed');
 const btnEnviarFdbck = document.getElementById('btnEnviarFdbck');
 const btnSairFdbck = document.getElementById('btnSairFdbck');
+const formFeedback = document.getElementById('formFeedback');
 
-btnFeed.onclick = function () { feed.showModal(); };
+btnFeed.onclick = function () {
+    feed.showModal();
+};
+
+let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+
 btnEnviarFdbck.onclick = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     let msgErro = document.querySelector('.erro');
     if (msgErro) msgErro.remove();
 
-    alert('Obrigado pela sua contribuição!')
-    feed.close(); 
+    const newsletter = document.getElementById('newsletterCheckbox').checked;
+    const gostou = document.querySelector('input[name="gostouPlaylist"]:checked')?.value || 'não informado';
+    const sugestao = document.getElementById('melhorias').value;
+
+    const novoFeedback = {
+        newsletter,
+        gostou,
+        sugestao,
+    };
+
+    feedbacks.push(novoFeedback);
+    localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+    const mensagemSucesso = document.getElementById('feedbackMensagem');
+    mensagemSucesso.textContent = 'Obrigado pelo seu feedback!';
+    mensagemSucesso.style.display = 'block';
+
+    formFeedback.reset();
+
+    const feedbackMensagem = document.getElementById('feedbackMensagem');
+    feedbackMensagem.style.display = 'block';
+    feedbackMensagem.innerText = 'Obrigado pela sua contribuição!';
 };
 
 btnSairFdbck.onclick = function () {

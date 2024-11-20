@@ -36,7 +36,7 @@ formLogin.addEventListener('submit', evento => {
 
             loginSucesso = true;
 
-            window.location.href = "../usuario/index.html";
+            window.location.href = "./usuario/index.html";
         }
     });
 
