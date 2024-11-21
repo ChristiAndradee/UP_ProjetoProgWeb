@@ -6,17 +6,15 @@
     <title>Musicalizando | Usuário</title>
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer></script>
+    <script src="logout.js" defer></script>
 </head>
 <body>
 <nav>
     <a href="#">Playlist - Favoritas</a>
     <a href="#inicio" id="btnFeed">Feedback e Newsletter</a>
-    <a href="../inicio/Index.html">Sair</a>
+    <a href="#" id="logout"> Sair</a>
 </nav>
 <main>
-        <header>
-            <a href="#" id="logout"> Sair</a>
-        </header>
         
         <section id="regPlayList">
             <form id="formFavoritas">
@@ -37,7 +35,7 @@
                 <input type="text" id="linkMusica" name="linkMusica" required><br>
 
                 <button type="reset">Limpar</button>
-                <button type="submit">Cadastrar</button>
+                <button type="submit" id="btnSalvar">Cadastrar</button>
             </form>
         </section>
 

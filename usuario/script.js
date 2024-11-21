@@ -50,6 +50,7 @@ let musica = document.getElementById('nomeMusica');
 let artista = document.getElementById('nomeArtista');
 let tempo = document.getElementById('tempoMusica');
 let link = document.getElementById('linkMusica');
+let editar = -1;
 
 document.getElementById("formFavoritas").addEventListener('submit', e =>{
     e.preventDefault();
@@ -62,11 +63,20 @@ document.getElementById("formFavoritas").addEventListener('submit', e =>{
         link: link.value
     };
 
-    dados.push(favPlayList);
+    if (editar === -1) {
+        dados.push(favPlayList);
+    } else {
+        dados[editar] = favPlayList;
+        editar = -1;
+    }
 
     localStorage.setItem('dados', JSON.stringify(dados));
 
     window.location.href = "./index.html";
+
+    const btnSalvar = document.getElementById('btnSalvar');
+    btnSalvar.innerText = "Cadastrar";
+    btnSalvar.style.backgroundColor = "";
 });
 
 function atualizarTabela() {
@@ -81,6 +91,7 @@ function atualizarTabela() {
             <td>
                 <a href="#" onclick="abrirMusica('${favPlayList.link}')">Ouvir</a>
                 <a href="#" onclick="removerMusica(${chave})" style="color: #e37171;">Excluir</a>
+                <a href="#" onclick="editarMusica(${chave})" style="color: #4CAF50;">Editar</a>
             </td>
         `;
         tbody.appendChild(linha);
@@ -99,6 +110,20 @@ function abrirMusica(link) {
     } else {
         alert("Link não disponível para esta música.");
     }
+}
+
+function editarMusica(id) {
+    const favPlayList = dados[id];
+    genero.value = favPlayList.genero;
+    musica.value = favPlayList.musica;
+    artista.value = favPlayList.artista;
+    tempo.value = favPlayList.tempo;
+    link.value = favPlayList.link;
+
+    editar = id;
+    const btnSalvar = document.getElementById('btnSalvar');
+    btnSalvar.innerText = "Salvar";
+    btnSalvar.style.backgroundColor = "#4CAF50";
 }
 
 
