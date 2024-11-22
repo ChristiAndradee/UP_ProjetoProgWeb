@@ -27,11 +27,11 @@ footer{
 }
 
 nav{
+    display: flex;
+    justify-content: space-between;
     padding: 16px 0px;
     position: fixed;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: black;
 }
@@ -156,8 +156,11 @@ section p{
 .botoesLogin button:hover{ background-color: #000000; }
 
 .Caixas {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
 }
 
 .caixa {
@@ -188,3 +191,69 @@ section p{
 }
 
 .fonteNegrito{ font-weight: bold; }
+
+<<<<<<< Updated upstream
+#playlistMes {
+    justify-content: center;
+    align-items: center;
+}
+
+#formPlayMes {
+    width: 100%;
+    color: white;
+    max-width: 400px;
+}
+
+#formPlayMes h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #71e3da ;
+    margin-bottom: 15px;
+}
+
+#formPlayMes input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#formPlayMes button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formPlayMes button[type="reset"] {
+    background-color: #8a5f5f;
+}
+
+#formPlayMes button[type="reset"]:hover {
+    background-color: #a88080;
+}
+
+#formPlayMes button[type="submit"] {
+    background-color: #5f608a;
+    margin-top: 5px;
+}
+
+#formPlayMes button[type="submit"]:hover {
+    background-color: #6f709b;
+    margin-top: 5px;
+=======
+@media (max-width: 768px) {
+    .Caixas {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .Caixas {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+>>>>>>> Stashed changes
+}

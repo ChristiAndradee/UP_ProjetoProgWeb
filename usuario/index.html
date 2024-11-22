@@ -6,57 +6,91 @@
     <title>Musicalizando | Usuário</title>
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer></script>
+    <script src="logout.js" defer></script>
 </head>
 <body>
 <nav>
     <a href="#">Playlist - Favoritas</a>
     <a href="#inicio" id="btnFeed">Feedback e Newsletter</a>
-    <a href="../inicio/Index.html">Sair</a>
+    <a href="#" id="logout"> Sair</a>
 </nav>
 <main>
-        <header>
-            <a href="#" id="logout"> Sair</a>
-        </header>
-        
-        <section id="regPlayList">
-            <form id="formFavoritas">
-                <h1>Adicione suas músicas favoritas</h1>
-                <label for="nomeMusica">Música:</label>
-                <input type="text" id="nomeMusica" name="nomeMusica" required><br>
-        
-                <label for="nomeArtista">Artista:</label>
-                <input type="text" id="nomeArtista" name="nomeArtista" required><br>
+    <!-- Formulário de músicas favoritas -->
+    <section id="regPlayList">
+        <form id="formFavoritas">
+            <h1>Adicione suas músicas favoritas</h1>
+            <label for="nomeMusica">Música:</label>
+            <input type="text" id="nomeMusica" name="nomeMusica" required><br>
 
-                <label for="gen">Genero:</label>
-                <input type="text" id="gen" name="gen"><br>
-        
-                <label for="tempoMusica">Tempo</label>
-                <input type="text" id="tempoMusica" name="tempoMusica" ><br>
+            <label for="nomeArtista">Artista:</label>
+            <input type="text" id="nomeArtista" name="nomeArtista" required><br>
 
-                <label for="linkMusica">Link:</label>
-                <input type="text" id="linkMusica" name="linkMusica" required><br>
+            <label for="gen">Gênero:</label>
+            <input type="text" id="gen" name="gen"><br>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </section>
+            <label for="tempoMusica">Tempo:</label>
+            <input type="text" id="tempoMusica" name="tempoMusica"><br>
 
-        <section id="tabela">
-            <h1>Playlist</h1>
-            <table id="tabelaPlayList">
-                <thead>
-                    <tr>
-                        <th>Musica</th>
-                        <th>Artista</th>
-                        <th>Genero</th>
-                        <th>Tempo</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>&nbsp;</tbody>
-            </table>
-        </section>
+            <label for="linkMusica">Link:</label>
+            <input type="text" id="linkMusica" name="linkMusica" required><br>
 
+            <button type="reset">Limpar</button>
+            <button type="submit" id="btnSalvar">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Tabela de músicas -->
+    <section id="tabela">
+        <h1>Playlist</h1>
+        <table id="tabelaPlayList">
+            <thead>
+                <tr>
+                    <th>Música</th>
+                    <th>Artista</th>
+                    <th>Gênero</th>
+                    <th>Tempo</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>&nbsp;</tbody>
+        </table>
+    </section>
+
+    <!-- Formulário de artistas favoritos -->
+    <section id="regPlayList">
+        <form id="formFavArts">
+            <h1>Adicione seus artistas favoritos</h1>
+            <label for="nomeArt">Nome:</label>
+            <input type="text" id="nomeArt" name="nomeArt" required><br>
+
+            <label for="anoNascimento">Ano de Nascimento:</label>
+            <input type="text" id="anoNascimento" name="anoNascimento" required><br>
+
+            <label for="nomeMusicaFamosa">Música Mais Famosa:</label>
+            <input type="text" id="nomeMusicaFamosa" name="nomeMusicaFamosa" required><br>
+
+            <button type="reset">Limpar</button>
+            <button type="submit" id="btnSalvarArtista">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Tabela de artistas -->
+    <section id="tabela">
+        <h1>Artistas Favoritos</h1>
+        <table id="tabelaArtista">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Ano de Nascimento</th>
+                    <th>Música Mais Famosa</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>&nbsp;</tbody>
+        </table>
+    </section>
+
+    <!-- Feedback e Newsletter -->
     <dialog id="feed">
         <aside id="feedback">
             <h2>Feedback e Newsletter</h2>
@@ -65,7 +99,7 @@
                     <input type="checkbox" id="newsletterCheckbox" name="newsletterCheckbox">
                     Deseja receber nossa Newsletter contendo uma playlist de 10 músicas por mês no email?
                 </label><br>
-        
+
                 <fieldset>
                     <legend>Gostou da playlist deste mês?</legend>
                     <label for="gostouSim">
@@ -77,14 +111,16 @@
                         Não
                     </label>
                 </fieldset><br>
-        
+
                 <label for="melhorias">Dê uma ideia de melhorias para a nossa página:</label>
                 <textarea id="melhorias" name="melhorias" rows="4" placeholder="Escreva aqui..."></textarea>
 
+                <div id="feedbackMensagem" class="mensagem-sucesso" style="display: none;"></div>
+
                 <div id="feedbackDireita">
                     <button type="reset">Limpar</button>
-                    <button type="submit" id = "btnEnviarFdbck">Enviar</button>
-                    <button id = "btnSairFdbck">Sair</button>
+                    <button type="submit" id="btnEnviarFdbck">Enviar</button>
+                    <button id="btnSairFdbck">Sair</button>
                 </div>
             </form>
         </aside>
